@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nom": "Inception",
+    "annee": 2010,
+    "langue": "Français",
+    "genre": "Action",
+    "categorie": "Science-Fiction"
+  },
+  {
+    "id": 2,
+    "nom": "Balle Perdue",
+    "annee": 2020,
+    "langue": "Français",
+    "genre": "Drame",
+    "categorie": "Thriller"
+  },
+  {
+    "id": 3,
+    "nom": "Le Chant du Loup",
+    "annee": 2019,
+    "langue": "Français",
+    "genre": "Action",
+    "categorie": "Drame"
+  },
+  {
+    "id": 4,
+    "nom": "Athena",
+    "annee": 2022,
+    "langue": "Français",
+    "genre": "Action",
+    "categorie": "Tragédie"
+  },
+  {
+    "id": 5,
+    "nom": "Léon",
+    "annee": 1994,
+    "langue": "Français",
+    "genre": "Action",
+    "categorie": "Policier"
+  },
+  {
+    "id": 6,
+    "nom": "AKA",
+    "annee": 2023,
+    "langue": "Français",
+    "genre": "Action",
+    "categorie": "Crime"
+  },
+  {
+    "id": 7,
+    "nom": "Taxi",
+    "annee": 1998,
+    "langue": "Français",
+    "genre": "Action",
+    "categorie": "Comédie"
+  },
+  {
+    "id": 8,
+    "nom": "Le Pacte des Loups",
+    "annee": 2001,
+    "langue": "Français",
+    "genre": "Action",
+    "categorie": "Aventure"
+  },
+  {
+    "id": 9,
+    "nom": "Overdrive",
+    "annee": 2017,
+    "langue": "Français",
+    "genre": "Action",
+    "categorie": "Course"
+  },
+  {
+    "id": 10,
+    "nom": "Bac Nord",
+    "annee": 2020,
+    "langue": "Français",
+    "genre": "Action",
+    "categorie": "Thriller"
+  }
+]
