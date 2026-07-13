@@ -9,7 +9,7 @@ export const HomePage = () => {
   const [selectedGenre, setSelectedGenre] = useState("");
   const [selectedCategorie, setSelectedCategorie] = useState("");
   const movies: filmProps[] = localStorage.getItem("films")
-    ? JSON.parse(localStorage.getItem("films"))
+    ? JSON.parse(localStorage.getItem("films")!)
     : films;
   const moviesFilter = movies.filter((movie) => {
     const matchSearch = movie.nom
@@ -25,15 +25,15 @@ export const HomePage = () => {
   return (
     <div className="flex flex-col gap-2 justify-center overflow-x-hidden">
       <NavBar
-        movies={movies}
+        movies={movies ?? []}
         setTapInput={setTapInput}
         setSelectedGenre={setSelectedGenre}
         setSelectedCategorie={setSelectedCategorie}
       />
       <h1>Recommandation pour vous</h1>
-      <MovieCard movies={moviesFilter} />
+      <MovieCard movies={moviesFilter ?? []} />
       <h1>Tous les Films</h1>
-      <MovieCard movies={movies} />
+      <MovieCard movies={movies ?? []} />
     </div>
   );
 };

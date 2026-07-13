@@ -1,6 +1,7 @@
 import { useState, type SubmitEvent } from "react";
+import type { movieProps } from "../interface";
 
-export const CreateMovie = ({ movies, setMovies }) => {
+export const CreateMovie = ({ movies, setMovies }: movieProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -39,21 +40,25 @@ export const CreateMovie = ({ movies, setMovies }) => {
           <input
             placeholder="nom ..."
             name="nom"
+            type="text"
             className="border-2 border-neutral-800 rounded-lg p-2 m-2"
           ></input>
           <input
             placeholder="genre ..."
             name="genre"
+            type="text"
             className="border-2 border-neutral-800 rounded-lg p-2 m-2"
           ></input>
           <input
             placeholder="categorie ..."
             name="categorie"
+            type="text"
             className="border-2 border-neutral-800 rounded-lg p-2 m-2"
           ></input>
           <input
             placeholder="langue ..."
             name="langue"
+            type="text"
             className="border-2 border-neutral-800 rounded-lg p-2 m-2"
           ></input>
           <input

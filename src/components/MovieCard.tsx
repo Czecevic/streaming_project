@@ -1,6 +1,6 @@
-import type { movieProps } from "../interface";
+import type { MovieCardProps } from "../interface";
 
-export const MovieCard = ({ movies }: movieProps) => {
+export const MovieCard = ({ movies }: MovieCardProps) => {
   if (movies.length === 0)
     return (
       <p className="text-neutral-400 text-center py-12">

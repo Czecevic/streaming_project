@@ -1,4 +1,10 @@
-export const SelectElem = ({ elemOfMovies, typeOfElem, setSelected }) => {
+import type { SelectElemProps } from "../interface";
+
+export const SelectElem = ({
+  elemOfMovies,
+  typeOfElem,
+  setSelected,
+}: SelectElemProps) => {
   return (
     <div className="fex flex-col gap-1.5">
       <label

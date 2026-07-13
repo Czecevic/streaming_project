@@ -1,4 +1,10 @@
-export const SearchBar = ({ setTapInput }) => {
+import type { Dispatch, SetStateAction } from "react";
+
+export const SearchBar = ({
+  setTapInput,
+}: {
+  setTapInput: Dispatch<SetStateAction<string>>;
+}) => {
   return (
     <input
       type="text"

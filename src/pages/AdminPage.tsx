@@ -6,9 +6,19 @@ import films from "../data/films.json";
 export const AdminPage = () => {
   const [movies, setMovies] = useState(() =>
     localStorage.getItem("films")
-      ? JSON.parse(localStorage.getItem("films"))
+      ? JSON.parse(localStorage.getItem("films")!)
       : films,
   );
+  const thTab = [
+    "id",
+    "nom",
+    "genre",
+    "categorie",
+    "langue",
+    "annee",
+    "modifier",
+    "supprimer",
+  ];
   return (
     <div>
       <div>
@@ -24,54 +34,14 @@ export const AdminPage = () => {
       <table className="w-full overflow-x-auto bg-neutral-900 border border-neutral-800 rounded-lg shadow-2xl">
         <thead>
           <tr className="border-b border-neutral-800 bg-neutral-900">
-            <th
-              scope="col"
-              className="px-6 py-4 text-xs font-bold text-neutral-400 uppercase tracking-wider"
-            >
-              id
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-4 text-xs font-bold text-neutral-400 uppercase tracking-wider"
-            >
-              nom
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-4 text-xs font-bold text-neutral-400 uppercase tracking-wider"
-            >
-              genre
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-4 text-xs font-bold text-neutral-400 uppercase tracking-wider"
-            >
-              categorie
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-4 text-xs font-bold text-neutral-400 uppercase tracking-wider"
-            >
-              langue
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-4 text-xs font-bold text-neutral-400 uppercase tracking-wider"
-            >
-              annee
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-4 text-xs font-bold text-neutral-400 uppercase tracking-wider"
-            >
-              modifier
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-4 text-xs font-bold text-neutral-400 uppercase tracking-wider"
-            >
-              supprimer
-            </th>
+            {thTab.map((th) => (
+              <th
+                scope="col"
+                className="px-6 py-4 text-xs font-bold text-neutral-400 uppercase tracking-wider"
+              >
+                {th}
+              </th>
+            ))}
           </tr>
         </thead>
         <MovieAdminTable movies={movies} setMovies={setMovies} />

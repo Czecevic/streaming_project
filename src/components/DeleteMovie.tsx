@@ -1,4 +1,4 @@
-import { Trash } from "../assets/trash";
+import { Trash } from "../assets/icons/trash";
 import type { DeleteMovieProps } from "../interface";
 
 export const DeleteMovie = ({

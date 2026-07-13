@@ -1,4 +1,4 @@
-import Loupe from "../assets/loupe";
+import Loupe from "../assets/icons/loupe";
 import type { NavProps } from "../interface";
 import { FilterTask } from "./FilterTask";
 import { SearchBar } from "./SearchBar";
