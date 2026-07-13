@@ -1,27 +1,37 @@
 import Loupe from "../assets/loupe";
+import type { NavProps } from "../interface";
 import { FilterTask } from "./FilterTask";
 import { SearchBar } from "./SearchBar";
 
-export const NavBar = ({ movie, setTapInput, changeDate, setChangeDate }) => {
+export const NavBar = ({
+  movies,
+  setTapInput,
+  setSelectedGenre,
+  setSelectedCategorie,
+}: NavProps) => {
   return (
     <div className="flex items-center gap-5 justify-between px-6 py-4">
       <a href="/">
-        <button>Logo</button>
+        <button className="text-sm font-medium text-neutral-300 hover:text-white px-4 py-2 rounded-lg transition-all duration-200 border bg-neutral-900 border-neutral-800">
+          Logo
+        </button>
       </a>
       <div className="flex-1 max-w-xl bg-neutral-800 border border-neutral-700 rounded-full px-4 py-2 flex items-center gap-3">
         <div className="text-neutral-400 text-lg">
           <Loupe />
         </div>
-        <SearchBar movie={movie} setTapInput={setTapInput} />
+        <SearchBar setTapInput={setTapInput} />
       </div>
       <div className="flex items-center gap-4">
         <FilterTask
-          movie={movie}
-          changeDate={changeDate}
-          setChangeDate={setChangeDate}
+          movies={movies}
+          setSelectedGenre={setSelectedGenre}
+          setSelectedCategorie={setSelectedCategorie}
         />
         <a href="/Admin">
-          <button className="cursor-pointer">Admin</button>
+          <button className="text-sm font-medium text-neutral-300 hover:text-white px-4 py-2 rounded-lg transition-all duration-200 border bg-neutral-900 border-neutral-800">
+            Admin
+          </button>
         </a>
       </div>
     </div>

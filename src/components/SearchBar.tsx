@@ -1,4 +1,4 @@
-export const SearchBar = ({ movie, setTapInput }) => {
+export const SearchBar = ({ setTapInput }) => {
   return (
     <input
       type="text"
