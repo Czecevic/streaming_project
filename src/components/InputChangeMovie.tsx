@@ -31,6 +31,7 @@ export const InputChangeMovie = ({
       ) : (
         <input
           value={valueTheme}
+          name="changeMovie"
           type={keyTheme === "annee" ? "number" : "text"}
           className={`bg-neutral-800 border border-neutral-700 rounded px-2 py-1 text-sm text-white focus:outline-none focus:border-indigo-500 w-full`}
           onChange={(e) =>

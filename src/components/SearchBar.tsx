@@ -9,6 +9,7 @@ export const SearchBar = ({
     <input
       type="text"
       placeholder="Rechercher un film..."
+      name="searchBar"
       className="w-full bg-transparent text-sm text-neutral-200 placeholder-neutral-500 focus:outline-none"
       onChange={(e) => setTapInput(e.target.value)}
     />
