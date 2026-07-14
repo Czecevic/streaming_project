@@ -25,7 +25,7 @@ export const InputChangeMovie = ({
   };
 
   return (
-    <td className="py-2 px-4">
+    <td className={keyTheme === "nom" && "w-1/6"}>
       {!edit ? (
         <p className={keyTheme === "langue" ? "uppercase" : ""}>{valueTheme}</p>
       ) : (

@@ -3,7 +3,7 @@ import { CreateMovie } from "../components/CreateMovie";
 import { MovieAdminTable } from "../components/MovieAdminTable";
 import films from "../data/films.json";
 import type { filmProps } from "../interface";
-import { keyMovie } from "../utils/movie";
+import { allKeyMovie, keyMovie } from "../utils/movie";
 import { sortMovies } from "../utils/movie";
 
 export const AdminPage = () => {
@@ -41,7 +41,7 @@ export const AdminPage = () => {
         <table className="w-full min-w-2xl bg-neutral-900">
           <thead>
             <tr className="border-b border-neutral-800 bg-neutral-900">
-              {keyMovie.map((th) => {
+              {allKeyMovie.map((th) => {
                 const isSortable = th !== "modifier" && th !== "supprimer";
                 return (
                   <th

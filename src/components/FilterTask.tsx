@@ -21,16 +21,17 @@ export const FilterTask = ({ movies, setSelectedGenre }: FilterProps) => {
         <div className="absolute right-0 mt-2 bg-neutral-900 border border-neutral-800 rounded-lg p-3 shadow-xl z-50 min-w-52 flex flex-col">
           <SelectElem
             elemOfMovies={GenderMoviess}
-            typeOfElem={"Genre"}
+            typeOfElem={"Genres"}
             setSelected={setSelectedGenre}
           />
           <button
             className="w-full mt-2 text-xs font-semibold text-neutral-400 hover:text-red-600 bg-neutral-800 py-2 rounded-md border border-neutral-800 hover:border-red-500 transition-all text-center"
             onClick={() => {
               setSelectedGenre("");
+              setIsOpen(!isOpen);
             }}
           >
-            clean filter
+            supprimer le filtre
           </button>
         </div>
       )}

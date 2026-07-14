@@ -27,9 +27,9 @@ export const MovieAdminTable = ({ movies, setMovies }: movieProps) => {
                 setMovies={setMovies}
               />
             ))}
-            <td className="py-2 px-4 text-center">
+            <td className="text-center">
               <button
-                className={`py-1.5 px-4 rounded-lg text-sm font-semibold cursor-pointer transition-all ${
+                className={`rounded-lg text-sm font-semibold cursor-pointer transition-all ${
                   edit
                     ? "bg-green-600 hover:bg-green-700 text-white"
                     : "text-neutral-400 hover:text-green-400 hover:bg-neutral-800"

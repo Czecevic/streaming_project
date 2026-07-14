@@ -19,6 +19,7 @@ export const SelectElem = ({
         onChange={(e) => setSelected(e.target.value)}
         className="w-full bg-neutral-800 text-sm text-neutral-200 border border-neutral-700 rounded-lg p-2.5 focus:outline-none focus:border-white transition-colors appearance-none"
       >
+        <option value="">- Choissisez un genre -</option>
         {elemOfMovies.map((elem: string) => (
           <option key={elem} value={elem}>
             {elem}

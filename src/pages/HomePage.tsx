@@ -25,17 +25,17 @@ export const HomePage = () => {
         setTapInput={setTapInput}
         setSelectedGenre={setSelectedGenre}
       />
-      <h1>Recommandation pour vous</h1>
+      <h1>Recommandations pour vous</h1>
       <MovieCard movies={moviesFilter ?? []} />
       <h1>Les classiques</h1>
       <MovieCard movies={moviesFilter ?? []} categorie="Classique" />
-      <h1>Films Populaire</h1>
+      <h1>Films populaires</h1>
       <MovieCard movies={moviesFilter ?? []} categorie="Populaire" />
-      <h1>Films Indépendant</h1>
+      <h1>Films indépendants</h1>
       <MovieCard movies={moviesFilter ?? []} categorie="Indépendant" />
-      <h1>Films Blockbuster</h1>
+      <h1>Films blockbusters</h1>
       <MovieCard movies={moviesFilter ?? []} categorie="Blockbuster" />
-      <h1>Tous les Films</h1>
+      <h1>Tous les films</h1>
       <MovieCard movies={movies ?? []} />
     </div>
   );
