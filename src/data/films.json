@@ -3,41 +3,41 @@
     "id": 1,
     "nom": "Inception",
     "annee": 2010,
-    "langue": "Français",
-    "genre": "Action",
-    "categorie": "Science-Fiction"
+    "langue": "Anglais",
+    "genre": "Science-Fiction",
+    "categorie": "Blockbuster"
   },
   {
     "id": 2,
     "nom": "Balle Perdue",
     "annee": 2020,
     "langue": "Français",
-    "genre": "Drame",
-    "categorie": "Thriller"
+    "genre": "Action",
+    "categorie": "Populaire"
   },
   {
     "id": 3,
     "nom": "Le Chant du Loup",
     "annee": 2019,
     "langue": "Français",
-    "genre": "Action",
-    "categorie": "Drame"
+    "genre": "Thriller",
+    "categorie": "Populaire"
   },
   {
     "id": 4,
     "nom": "Athena",
     "annee": 2022,
     "langue": "Français",
-    "genre": "Action",
-    "categorie": "Tragédie"
+    "genre": "Drame",
+    "categorie": "Indépendant"
   },
   {
     "id": 5,
     "nom": "Léon",
     "annee": 1994,
     "langue": "Français",
-    "genre": "Action",
-    "categorie": "Policier"
+    "genre": "Policier",
+    "categorie": "Classique"
   },
   {
     "id": 6,
@@ -45,15 +45,15 @@
     "annee": 2023,
     "langue": "Français",
     "genre": "Action",
-    "categorie": "Crime"
+    "categorie": "Populaire"
   },
   {
     "id": 7,
     "nom": "Taxi",
     "annee": 1998,
     "langue": "Français",
-    "genre": "Action",
-    "categorie": "Comédie"
+    "genre": "Comédie",
+    "categorie": "Classique"
   },
   {
     "id": 8,
@@ -61,22 +61,142 @@
     "annee": 2001,
     "langue": "Français",
     "genre": "Action",
-    "categorie": "Aventure"
+    "categorie": "Classique"
   },
   {
     "id": 9,
     "nom": "Overdrive",
     "annee": 2017,
-    "langue": "Français",
+    "langue": "Anglais",
     "genre": "Action",
-    "categorie": "Course"
+    "categorie": "Populaire"
   },
   {
     "id": 10,
     "nom": "Bac Nord",
     "annee": 2020,
     "langue": "Français",
+    "genre": "Policier",
+    "categorie": "Populaire"
+  },
+  {
+    "id": 11,
+    "nom": "Interstellar",
+    "annee": 2014,
+    "langue": "Anglais",
+    "genre": "Science-Fiction",
+    "categorie": "Blockbuster"
+  },
+  {
+    "id": 12,
+    "nom": "Parasite",
+    "annee": 2019,
+    "langue": "Coréen",
+    "genre": "Thriller",
+    "categorie": "Classique"
+  },
+  {
+    "id": 13,
+    "nom": "Le Fabuleux Destin d'Amélie Poulain",
+    "annee": 2001,
+    "langue": "Français",
+    "genre": "Comédie",
+    "categorie": "Classique"
+  },
+  {
+    "id": 14,
+    "nom": "La Haine",
+    "annee": 1995,
+    "langue": "Français",
+    "genre": "Drame",
+    "categorie": "Classique"
+  },
+  {
+    "id": 15,
+    "nom": "The Dark Knight",
+    "annee": 2008,
+    "langue": "Anglais",
     "genre": "Action",
-    "categorie": "Thriller"
+    "categorie": "Blockbuster"
+  },
+  {
+    "id": 16,
+    "nom": "Anatomie d'une chute",
+    "annee": 2023,
+    "langue": "Français",
+    "genre": "Thriller",
+    "categorie": "Indépendant"
+  },
+  {
+    "id": 17,
+    "nom": "Le Voyage de Chihiro",
+    "annee": 2001,
+    "langue": "Japonais",
+    "genre": "Animation",
+    "categorie": "Classique"
+  },
+  {
+    "id": 18,
+    "nom": "Dune : Deuxième Partie",
+    "annee": 2024,
+    "langue": "Anglais",
+    "genre": "Science-Fiction",
+    "categorie": "Blockbuster"
+  },
+  {
+    "id": 19,
+    "nom": "La Plateforme",
+    "annee": 2019,
+    "langue": "Espagnol",
+    "genre": "Science-Fiction",
+    "categorie": "Indépendant"
+  },
+  {
+    "id": 20,
+    "nom": "Whiplash",
+    "annee": 2014,
+    "langue": "Anglais",
+    "genre": "Drame",
+    "categorie": "Indépendant"
+  },
+  {
+    "id": 21,
+    "nom": "Un Prophète",
+    "annee": 2009,
+    "langue": "Français",
+    "genre": "Policier",
+    "categorie": "Classique"
+  },
+  {
+    "id": 22,
+    "nom": "Matrix",
+    "annee": 1999,
+    "langue": "Anglais",
+    "genre": "Science-Fiction",
+    "categorie": "Classique"
+  },
+  {
+    "id": 23,
+    "nom": "Astérix & Obélix : Mission Cléopâtre",
+    "annee": 2002,
+    "langue": "Français",
+    "genre": "Comédie",
+    "categorie": "Classique"
+  },
+  {
+    "id": 24,
+    "nom": "Everything Everywhere All at Once",
+    "annee": 2022,
+    "langue": "Anglais",
+    "genre": "Action",
+    "categorie": "Indépendant"
+  },
+  {
+    "id": 25,
+    "nom": "Boîte Noire",
+    "annee": 2021,
+    "langue": "Français",
+    "genre": "Thriller",
+    "categorie": "Populaire"
   }
 ]

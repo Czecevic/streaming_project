@@ -16,7 +16,7 @@
 - **Outils de Build :** Vite, Bun (Gestionnaire de paquets & Runtime)
 - **Design / Maquette :** Excalidraw (`maquette/streaming.excalidraw`)
 
-### 📦 Installation et Lancement
+### Installation et Lancement
 
 1. **Cloner le dépôt :**
    ```bash
@@ -43,9 +43,9 @@ L'application sera disponible sur `http://localhost:5173`.
 
 ---
 
-## 🇬🇧 English Version
+## English Version
 
-### 🚀 Features
+### Features
 
 - **Admin Dashboard (Full CRUD):**
 - **Create:** Movie creation form with strict type safety.
@@ -63,7 +63,7 @@ L'application sera disponible sur `http://localhost:5173`.
 - **Build Tools:** Vite, Bun (Package manager & Runtime)
 - **Design:** Excalidraw mockup included (`maquette/streaming.excalidraw`)
 
-### 📦 Installation & Setup
+### Installation & Setup
 
 1. **Clone the repository:**
 

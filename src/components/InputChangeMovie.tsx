@@ -1,5 +1,4 @@
-import { useState } from "react";
-import type { filmProps, InputChangeMovieProps } from "../interface";
+import type { InputChangeMovieProps } from "../interface";
 
 export const InputChangeMovie = ({
   edit,
@@ -11,7 +10,7 @@ export const InputChangeMovie = ({
 }: InputChangeMovieProps) => {
   const changeContentMovie = (
     id: number,
-    filed: keyof filmProps,
+    filed: string,
     value: string | number,
   ) => {
     const updatedMovie = movies.map((movie) => {

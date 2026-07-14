@@ -1,15 +1,15 @@
 import { Trash } from "../assets/icons/trash";
 import type { DeleteMovieProps } from "../interface";
-
+import { removeMovieObject } from "../utils/movie";
 export const DeleteMovie = ({
   movies,
   movieId,
   setMovies,
 }: DeleteMovieProps) => {
   const removeMovie = () => {
-    const filterMovie = movies.filter((movie) => movie.id !== movieId);
-    setMovies(filterMovie);
-    localStorage.setItem("films", JSON.stringify(filterMovie));
+    const remove = removeMovieObject(movieId, movies);
+    setMovies(remove);
+    localStorage.setItem("films", JSON.stringify(remove));
   };
   return (
     <td className="p-2">

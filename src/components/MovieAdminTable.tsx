@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Pen } from "../assets/icons/pen";
 import type { movieProps } from "../interface";
+import { createKeyMovie } from "../utils/movie";
 import { DeleteMovie } from "./DeleteMovie";
 import { InputChangeMovie } from "./InputChangeMovie";
 
@@ -15,49 +16,17 @@ export const MovieAdminTable = ({ movies, setMovies }: movieProps) => {
             key={movie.id}
             className="hover:bg-neutral-900/40 transition-colors"
           >
-            <td className="py-2 px-3 text-neutral-500 font-mono text-sm">
-              {movie.id}
-            </td>
-            <InputChangeMovie
-              edit={edit}
-              keyTheme="nom"
-              valueTheme={movie.nom}
-              movieId={movie.id}
-              movies={movies}
-              setMovies={setMovies}
-            />
-            <InputChangeMovie
-              edit={edit}
-              keyTheme="genre"
-              valueTheme={movie.genre}
-              movieId={movie.id}
-              movies={movies}
-              setMovies={setMovies}
-            />
-            <InputChangeMovie
-              edit={edit}
-              keyTheme="categorie"
-              valueTheme={movie.categorie}
-              movieId={movie.id}
-              movies={movies}
-              setMovies={setMovies}
-            />
-            <InputChangeMovie
-              edit={edit}
-              keyTheme="langue"
-              valueTheme={movie.langue}
-              movieId={movie.id}
-              movies={movies}
-              setMovies={setMovies}
-            />
-            <InputChangeMovie
-              edit={edit}
-              keyTheme="annee"
-              valueTheme={movie.annee}
-              movieId={movie.id}
-              movies={movies}
-              setMovies={setMovies}
-            />
+            <td className=" text-neutral-500 font-mono text-sm">{movie.id}</td>
+            {createKeyMovie.map((key) => (
+              <InputChangeMovie
+                edit={edit}
+                keyTheme={key}
+                valueTheme={movie[key]}
+                movieId={movie.id}
+                movies={movies}
+                setMovies={setMovies}
+              />
+            ))}
             <td className="py-2 px-4 text-center">
               <button
                 className={`py-1.5 px-4 rounded-lg text-sm font-semibold cursor-pointer transition-all ${
@@ -70,7 +39,6 @@ export const MovieAdminTable = ({ movies, setMovies }: movieProps) => {
                 {edit ? "OK" : <Pen />}
               </button>
             </td>
-
             <DeleteMovie
               movies={movies}
               movieId={movie.id}

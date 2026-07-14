@@ -1,5 +1,7 @@
 import { useState, type SubmitEvent } from "react";
-import type { movieProps } from "../interface";
+import { type movieProps } from "../interface";
+import { createKeyMovie } from "../utils/movie";
+import { CreateMovieObject } from "../utils/movie";
 
 export const CreateMovie = ({ movies, setMovies }: movieProps) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,19 +9,7 @@ export const CreateMovie = ({ movies, setMovies }: movieProps) => {
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
-    const name = String(formData.get("nom"));
-    const gender = String(formData.get("genre"));
-    const categorie = String(formData.get("categorie"));
-    const language = String(formData.get("langue"));
-    const years = Number(formData.get("annee"));
-    const newMovie = {
-      id: movies.length + 1,
-      nom: name,
-      genre: gender,
-      categorie: categorie,
-      langue: language,
-      annee: years,
-    };
+    const newMovie = CreateMovieObject(formData, movies);
     const upgradeCatalogue = [...movies, newMovie];
     setMovies(upgradeCatalogue);
     localStorage.setItem("films", JSON.stringify(upgradeCatalogue));
@@ -37,36 +27,16 @@ export const CreateMovie = ({ movies, setMovies }: movieProps) => {
       {isOpen && (
         <form className="flex flex-col p-5" onSubmit={handleSubmit}>
           <h3 className="text-sm font-bold">Nouveau film</h3>
-          <input
-            placeholder="nom ..."
-            name="nom"
-            type="text"
-            className="border-2 border-neutral-800 rounded-lg p-2 m-2"
-          ></input>
-          <input
-            placeholder="genre ..."
-            name="genre"
-            type="text"
-            className="border-2 border-neutral-800 rounded-lg p-2 m-2"
-          ></input>
-          <input
-            placeholder="categorie ..."
-            name="categorie"
-            type="text"
-            className="border-2 border-neutral-800 rounded-lg p-2 m-2"
-          ></input>
-          <input
-            placeholder="langue ..."
-            name="langue"
-            type="text"
-            className="border-2 border-neutral-800 rounded-lg p-2 m-2"
-          ></input>
-          <input
-            placeholder="annee ..."
-            name="annee"
-            type="number"
-            className="border-2 border-neutral-800 rounded-lg p-2 m-2"
-          ></input>
+          {createKeyMovie.map((key) => {
+            return (
+              <input
+                placeholder={`${key} ...`}
+                name={key}
+                type="text"
+                className="border-2 border-neutral-800 rounded-lg p-2 m-2"
+              ></input>
+            );
+          })}
           <button className="border-2 border-neutral-800 bg-neutral-300 text-black rounded-lg p-2 m-2">
             Ajouter
           </button>
