@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Pen } from "../assets/icons/pen";
-import type { movieProps } from "../interface";
-import { createKeyMovie } from "../utils/movie";
+import type { filmProps, movieProps } from "../interface";
+import { keyMovie } from "../utils/movie";
 import { DeleteMovie } from "./DeleteMovie";
 import { InputChangeMovie } from "./InputChangeMovie";
 
@@ -17,11 +17,11 @@ export const MovieAdminTable = ({ movies, setMovies }: movieProps) => {
             className="hover:bg-neutral-900/40 transition-colors"
           >
             <td className=" text-neutral-500 font-mono text-sm">{movie.id}</td>
-            {createKeyMovie.map((key) => (
+            {keyMovie.map((key) => (
               <InputChangeMovie
                 edit={edit}
                 keyTheme={key}
-                valueTheme={movie[key]}
+                valueTheme={movie[key as keyof filmProps]}
                 movieId={movie.id}
                 movies={movies}
                 setMovies={setMovies}

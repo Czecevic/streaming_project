@@ -1,6 +1,6 @@
-import type { filmProps, movieProps } from "./../interface";
+import type { filmProps } from "./../interface";
 
-export const keyMovie = [
+export const allKeyMovie = [
   "id",
   "nom",
   "genre",
@@ -11,7 +11,7 @@ export const keyMovie = [
   "supprimer",
 ];
 
-export const createKeyMovie = ["nom", "genre", "categorie", "langue", "annee"];
+export const keyMovie = ["nom", "genre", "categorie", "langue", "annee"];
 
 export const CreateMovieObject = (
   formData: FormData,

@@ -1,6 +1,6 @@
 import { useState, type SubmitEvent } from "react";
 import { type movieProps } from "../interface";
-import { createKeyMovie } from "../utils/movie";
+import { keyMovie } from "../utils/movie";
 import { CreateMovieObject } from "../utils/movie";
 
 export const CreateMovie = ({ movies, setMovies }: movieProps) => {
@@ -27,7 +27,7 @@ export const CreateMovie = ({ movies, setMovies }: movieProps) => {
       {isOpen && (
         <form className="flex flex-col p-5" onSubmit={handleSubmit}>
           <h3 className="text-sm font-bold">Nouveau film</h3>
-          {createKeyMovie.map((key) => {
+          {keyMovie.map((key) => {
             return (
               <input
                 placeholder={`${key} ...`}

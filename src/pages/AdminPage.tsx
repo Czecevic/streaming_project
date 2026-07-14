@@ -37,8 +37,6 @@ export const AdminPage = () => {
           Les films actuellement présents
         </h1>
       </div>
-
-      {/* Wrapper avec scroll horizontal pour les petits écrans */}
       <div className="w-full overflow-x-auto rounded-lg shadow-2xl border border-neutral-800">
         <table className="w-full min-w-2xl bg-neutral-900">
           <thead>
