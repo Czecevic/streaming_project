@@ -3,7 +3,7 @@ import { CreateMovie } from "../components/CreateMovie";
 import { MovieAdminTable } from "../components/MovieAdminTable";
 import films from "../data/films.json";
 import type { filmProps } from "../interface";
-import { allKeyMovie, keyMovie } from "../utils/movie";
+import { allKeyMovie } from "../utils/movie";
 import { sortMovies } from "../utils/movie";
 
 export const AdminPage = () => {
