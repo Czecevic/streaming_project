@@ -23,7 +23,7 @@ export const AdminPage = () => {
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-4">
-      <div className="mt-16 sm:mt-0">
+      <div className="flex flex-col items-center ml-6 mt-6 sm:mt-0">
         <a href="/">
           <button className="fixed border border-neutral-100 rounded-lg top-5 left-5 text-xl sm:text-2xl px-2.5 sm:px-3 py-1 z-10 bg-neutral-900">
             &#8592;
