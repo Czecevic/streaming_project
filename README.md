@@ -1,9 +1,3 @@
-# 🎬 Streaming Project (Movie Admin Dashboard)
-
-A modern, responsive web application built with **React**, **TypeScript**, and **Vite** (powered by **Bun**). This project features a complete movie management dashboard (CRUD) with persistent storage and dynamic filtering.
-
----
-
 ## Version Française
 
 ### Fonctionnalités

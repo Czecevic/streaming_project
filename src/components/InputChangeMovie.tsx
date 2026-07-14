@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { filmProps, InputChangeMovieProps } from "../interface";
 
 export const InputChangeMovie = ({

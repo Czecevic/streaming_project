@@ -30,7 +30,7 @@ export const CreateMovie = ({ movies, setMovies }: movieProps) => {
     <div>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="border-2 border-green-500 text-green-900 rounded-lg p-3 hover:bg-green-200 hover:text-black hover:border-none transition-colors"
+        className={`${isOpen ? `border-red-500 text-red-900 hover:bg-red-200` : `border-green-500 text-green-900 hover:bg-green-200`} border-2 rounded-lg p-3 hover:text-black hover:border-none transition-colors`}
       >
         {isOpen ? "Annuler" : "+ Ajouter un film"}
       </button>

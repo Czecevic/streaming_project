@@ -6,7 +6,6 @@ import { InputChangeMovie } from "./InputChangeMovie";
 
 export const MovieAdminTable = ({ movies, setMovies }: movieProps) => {
   const [editingId, setEditingId] = useState<number | null>(null);
-
   return (
     <tbody className="divide-y divide-neutral-800 text-neutral-200">
       {movies.map((movie) => {
@@ -16,7 +15,7 @@ export const MovieAdminTable = ({ movies, setMovies }: movieProps) => {
             key={movie.id}
             className="hover:bg-neutral-900/40 transition-colors"
           >
-            <td className="py-3 px-4 text-neutral-500 font-mono text-sm">
+            <td className="py-2 px-3 text-neutral-500 font-mono text-sm">
               {movie.id}
             </td>
             <InputChangeMovie
@@ -63,8 +62,8 @@ export const MovieAdminTable = ({ movies, setMovies }: movieProps) => {
               <button
                 className={`py-1.5 px-4 rounded-lg text-sm font-semibold cursor-pointer transition-all ${
                   edit
-                    ? "bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg shadow-indigo-600/10"
-                    : "text-neutral-400 hover:text-indigo-400 hover:bg-neutral-800"
+                    ? "bg-green-600 hover:bg-green-700 text-white"
+                    : "text-neutral-400 hover:text-green-400 hover:bg-neutral-800"
                 }`}
                 onClick={() => setEditingId(edit ? null : movie.id)}
               >

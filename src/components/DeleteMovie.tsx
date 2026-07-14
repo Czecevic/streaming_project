@@ -14,7 +14,7 @@ export const DeleteMovie = ({
   return (
     <td className="p-2">
       <button
-        className="py-2 rounded-lg text-red-500 text-xl hover:border-2 hover:border-red-500 hover:p-3"
+        className={`py-1.5 px-4 rounded-lg text-sm font-semibold cursor-pointer transition-all hover:bg-red-700 text-white`}
         onClick={() => removeMovie()}
       >
         <Trash />
